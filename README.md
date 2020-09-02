@@ -1,6 +1,7 @@
 # Shape健身平台
 
 **小程序二维码**：<img src="https://github.com/Sahara-Team/shape-fitness-algorithm-end/blob/master/images/qrcode.jpg">
+
 **Web版项目地址**：http://118.178.188.222:1234
 
 ## 后端和算法服务部署
