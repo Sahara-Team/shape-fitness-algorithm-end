@@ -1,3 +1,0 @@
-<!--pages/test/test.wxml-->
-<button bindtap="gotoStatic">蹲马步</button>
-<button bindtap="gotoDynamic">健身操</button>
