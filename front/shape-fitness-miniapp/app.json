@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/trainList/trainList",
+        "pages/home/home",
+        "pages/myTrain/myTrain",
+        "pages/trainIntro/trainIntro",
+        "pages/trainDetail/trainDetail",
+        "pages/trainDynamic/trainDynamic",
+        "pages/trainScore/trainScore"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Shape",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "plugins": {
+        "tfjsPlugin": {
+            "version": "0.1.0",
+            "provider": "wx6afed118d9e81df9"
+        }
+    },
+    "tabBar": {
+        "selectedColor": "#6467f0",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "训练",
+                "iconPath": "images/do_default.png",
+                "selectedIconPath": "images/do_active.png"
+            },
+            {
+                "pagePath": "pages/myTrain/myTrain",
+                "text": "我的训练",
+                "iconPath": "images/course_default.png",
+                "selectedIconPath": "images/course_active.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "images/my_default.png",
+                "selectedIconPath": "images/my_active.png"
+            }
+        ]
+    }
+}

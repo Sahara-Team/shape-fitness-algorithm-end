@@ -1,0 +1,25 @@
+<!--pages/mytrain/mytrain.wxml-->
+<view class="summary-container">
+	<view class="head">
+		<!-- <view class="dataBlock">
+			<view class="dataBlockDigit">0</view>
+			<view class="dataBlockTitle">累积消耗/千卡</view>
+		</view> -->
+		<view class="dataBlock">
+			<view class="dataBlockDigit">{{records.length}}</view>
+			<view class="dataBlockTitle">累积课程/节课</view>
+		</view>
+	</view>
+	<view class="ipt-wrap border-b flex ai-center">
+	</view>
+	<view class="font16 fontStyle">训练记录</view>
+</view>
+<view class="record-container">
+	<scroll-view class="record-list" scroll-y="true">
+		<view class='record-item' wx:for="{{records}}">
+			<view class="item-number">{{item.number}}</view>
+			<view class="item-name">{{item.name}}</view>
+			<view class="item-date">{{item.date}}</view>
+		</view>
+	</scroll-view>
+</view>

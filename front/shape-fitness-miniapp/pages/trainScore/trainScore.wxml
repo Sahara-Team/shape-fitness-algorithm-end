@@ -1,0 +1,37 @@
+<!--pages/trainScore/trainScore.wxml-->
+<view class="camera-container" style="height: 385px">
+	<camera device-position="{{cameraPosition}}" flash="off" binderror="error" frame-size="small" style="width: 288px; height: 385px;">
+		<canvas canvas-id="pose" style="width: 100%; height: 100%;">
+		</canvas>
+	</camera>
+</view>
+
+<view class="result-container">
+	<view class="progress-box">
+		<text>SCORE</text>
+		<progress class='progress-bar' percent="{{score}}" show-info="true" font-size="15"></progress>
+	</view>
+</view>
+
+<view class="video-container">
+	<video id='demo-video' src="{{videoPath}}" loop="{{true}}" controls="{{false}}"></video>
+</view>
+
+<view class="button-group">
+	<block wx:if="{{isTraining}}">
+		<button class="switch-camera-button" bindtap="switchCamera">
+			<text>切换摄像头</text>
+		</button>
+		<button class="train-button stop" bindtap="stopTrain">
+			<text>结束训练</text>
+		</button>
+	</block>
+	<block wx:else="{{isTraining}}">
+		<button class="switch-camera-button" bindtap="switchCamera">
+			<text>切换摄像头</text>
+		</button>
+		<button class="train-button start" bindtap="startTrain">
+			<text>开始训练</text>
+		</button>
+	</block>
+</view>

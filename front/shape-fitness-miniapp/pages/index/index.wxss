@@ -1,0 +1,47 @@
+/**index.wxss**/
+.show-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.show-item {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-introduction {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 60rpx;
+  line-height: 84rpx;
+  color: white;
+}
+
+.item-mask {
+  position: absolute;
+  width: 95%;
+  height: 93%;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.item-illustration {
+  position: absolute;
+  width: 95%;
+  height: 93%;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  z-index: -2;
+}

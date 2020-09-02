@@ -1,0 +1,9 @@
+<scroll-view scroll-y="true">
+  <view class='show-list'>
+    <view class='show-item' wx:for="{{showPicture}}" style="height:300rpx"  bindtap="onTapChangeView">
+      <view class='item-introduction'>{{item.introduction}}</view>
+      <view class='item-mask'></view>
+      <image class='item-illustration' src='{{item.picturePath}}'></image>
+    </view>
+  </view>
+</scroll-view>

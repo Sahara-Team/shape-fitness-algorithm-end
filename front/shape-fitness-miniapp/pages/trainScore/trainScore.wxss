@@ -1,0 +1,91 @@
+/* pages/trainScore/trainScore.wxss */
+.camera-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.result-container {
+    width: 95%;
+    height: 70rpx;
+    padding-top: 30rpx;
+}
+
+.progress-box {
+    display: flex;
+}
+
+
+.progress-box text {
+    width: 30%;
+    text-align: center;
+}
+
+.progress-box progress {
+    width: 70%;
+    right: 0;
+}
+
+.result-container text {
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.button-group {
+    position: fixed;
+    height: 100rpx;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: stretch;
+}
+
+.switch-camera-button {
+    height: 100%;
+    width: 30%;
+    border-radius: 0%;
+    line-height: 60rpx;
+    background-color: green;
+}
+
+.switch-camera-button text {
+    font-size: medium;
+    color: white;
+}
+
+.train-button {
+    height: 100%;
+    border-radius: 0%;
+    line-height: 60rpx;
+}
+
+.start {
+    background-color: lightskyblue;
+}
+
+.pause {
+    background-color: orange;
+}
+
+.stop {
+    background-color: red;
+}
+
+.train-button text {
+    font-size: medium;
+    color: white;
+}

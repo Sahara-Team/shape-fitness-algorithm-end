@@ -1,0 +1,45 @@
+<!--pages/trainDynamic/trainDynamic.wxml-->
+<view class="detect-container">
+	<camera device-position="{{cameraPosition}}" flash="off" binderror="error" frame-size="small" style="width: 288px; height: 352px;">
+		<canvas canvas-id="pose" style="width: 100%; height: 100%;">
+		</canvas>
+	</camera>
+</view>
+
+<view class="result-container">
+	<block wx:for="{{resultArray}}" wx:for-index="idx" wx:for-item="item">
+		<view class="progress-box">
+			<text>{{idx}}</text>
+			<progress class='progress-bar' percent="{{item}}" show-info="true" font-size="15"></progress>
+		</view>
+	</block>
+</view>
+
+<view class="detail-container">
+	<swiper class="detail-swiper" indicator-dots>
+		<block wx:for="{{imageUrls}}">
+			<swiper-item>
+				<image src="{{item}}" mode="aspectFill" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<view class="button-group">
+	<block wx:if="{{isTraining}}">
+		<button class="switch-camera-button" bindtap="switchCamera">
+			<text>切换摄像头</text>
+		</button>
+		<button class="train-button stop" bindtap="stopTrain">
+			<text>结束训练</text>
+		</button>
+	</block>
+	<block wx:else="{{isTraining}}">
+		<button class="switch-camera-button" bindtap="switchCamera">
+			<text>切换摄像头</text>
+		</button>
+		<button class="train-button start" bindtap="startTrain">
+			<text>开始训练</text>
+		</button>
+	</block>
+</view>

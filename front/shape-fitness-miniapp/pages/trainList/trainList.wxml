@@ -1,0 +1,10 @@
+<!--pages/list/list.wxml-->
+<scroll-view scroll-y="true">
+	<view class='show-list'>
+		<view class='show-item' wx:for="{{showPicture}}" style="height:300rpx" bindtap="onTapShowItem" data-id="{{item.id}}">
+			<view class='item-introduction'>{{item.name}}</view>
+			<view class='item-mask'></view>
+			<image class='item-illustration' src='{{item.imageurl}}'></image>
+		</view>
+	</view>
+</scroll-view>

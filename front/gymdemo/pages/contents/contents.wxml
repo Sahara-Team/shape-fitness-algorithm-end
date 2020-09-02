@@ -1,0 +1,38 @@
+<swiper class="banner" indicator-dots>
+	<!-- <swiper-item>
+    <image src="/images/p1.jpg"mode="widthFix"/>
+  </swiper-item> -->
+	<swiper-item>
+		<image src="/images/p2.jpg" mode="aspectFill" />
+	</swiper-item>
+	<swiper-item>
+		<image src="/images/p3.jpg" mode="aspectFill" />
+	</swiper-item>
+
+</swiper>
+
+<view class="container1">
+	<view class="p1"><text space="ensp" decode> 平板支撑</text></view>
+	<view>
+		<text class="f1" space="ensp">  要点</text>
+		<rich-text nodes="{{nodespoints}}" />
+	</view>
+
+	<view>
+		<text class="f1" space="ensp">  错误示范</text>
+		<rich-text nodes="{{nodesmodel}}" />
+		<text decode>\n\n\n</text>
+	</view>
+
+</view>
+
+
+<button type="primary" style='position:fixed;width:100%;bottom:0;border-radius:0%'><view>
+  <navigator url="/pages/index/index">开始训练</navigator>
+</view></button>
+
+
+
+
+
+
