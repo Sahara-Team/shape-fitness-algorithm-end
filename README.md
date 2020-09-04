@@ -1,5 +1,9 @@
 # Shape健身平台
 
+**小程序运行示意图**：
+
+![image](https://github.com/Sahara-Team/shape-fitness-algorithm-end/blob/master/images/demo.gif)
+
 **小程序二维码**：
 
 <img src="https://github.com/Sahara-Team/shape-fitness-algorithm-end/blob/master/images/qrcode.jpg">
